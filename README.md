@@ -1,20 +1,57 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <h1>🧠 Mind Merge</h1>
+  <p>An AI-powered educational platform connecting teachers and students through dynamic, AI-generated content.</p>
 </div>
 
-# Run and deploy your AI Studio app
+## 📖 About the Project
 
-This contains everything you need to run your app locally.
+Mind Merge is an innovative application built to streamline the educational workflow. By leveraging the power of Google's Gemini AI, it allows educators to quickly generate, review, and publish learning materials, which students can then access through a dedicated hub. 
 
-View your app in AI Studio: https://ai.studio/apps/36ab71f9-d7f0-49e7-bf6c-0bc07e1bb0be
+The application provides a seamless, beautifully animated user experience divided into four main stages:
+- **Landing Page**: Role selection for Teachers and Students.
+- **Teacher Dashboard**: Upload materials and generate AI-driven study content.
+- **Teacher Review**: Review, edit, and perfect the AI-generated content before publishing.
+- **Student Hub**: An engaging interface for students to access and interact with the published lessons.
 
-## Run Locally
+## ✨ Features
 
-**Prerequisites:**  Node.js
+- 🤖 **AI-Powered Content Generation**: Fast and context-aware educational material generation using the Google GenAI SDK.
+- 🎨 **Premium Modern UI**: Built with React, TailwindCSS, and Framer Motion for a fluid, glassmorphic, and highly interactive user experience.
+- 👥 **Role-Based Workflows**: Distinct, tailored interfaces for both educators and learners.
+- ⚡ **Lightning Fast**: Powered by Vite for instant server start and rapid HMR.
 
+## 🚀 Tech Stack
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **Frontend Framework**: React 19
+- **Build Tool**: Vite
+- **Styling**: TailwindCSS v4
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **AI Integration**: `@google/genai` (Gemini)
+- **Backend/Server**: Express (for API handling)
+
+## 🛠️ Run Locally
+
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- A Gemini API Key from [Google AI Studio](https://aistudio.google.com/)
+
+### Installation
+
+1. Clone the repository and install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Set up environment variables:
+   Rename `.env.example` to `.env.local` (or `.env`) and add your Gemini API key:
+   ```env
+   GEMINI_API_KEY=your_gemini_api_key_here
+   ```
+
+3. Start the Vite development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:3000`.
